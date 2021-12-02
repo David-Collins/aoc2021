@@ -6,9 +6,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
-          Day3.main(null);
-    }
+    public static void main(String[] args) {}
     public static List<String> readInputLines(int day) {
         try{
             File text = new File(System.getProperty("user.dir") + "/../input/day" + day +".txt");
