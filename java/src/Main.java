@@ -24,4 +24,21 @@ public class Main {
             return null;
         }
     }
+    public static List<String> readInputLines(String day) {
+        try{
+            File text = new File(System.getProperty("user.dir") + "/../input/day" + day +".txt");
+            Scanner sc = new Scanner(text);
+            int acc = 0;
+            List<String> lines = new ArrayList<>();
+            while(sc.hasNextLine()) {
+                String currLine = sc.nextLine();
+                lines.add(currLine);
+            }
+            return lines;
+        }
+        catch (FileNotFoundException e){
+            e.printStackTrace();
+            return null;
+        }
+    }
 }
